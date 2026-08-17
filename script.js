@@ -85,6 +85,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     btnYes1.addEventListener('click', () => {
+        btnNo1.style.display = 'none';
         screen1.classList.remove('active');
         screen2.classList.add('active');
         startHearts();
@@ -96,6 +97,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     btnYes2.addEventListener('click', () => {
+        btnNo2.style.display = 'none';
         screen2.classList.remove('active');
         screen3.classList.add('active');
     });
