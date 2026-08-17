@@ -1,8 +1,13 @@
-// Configuração da API do YouTube
+// Carrega a API do YouTube de forma segura
+var tag = document.createElement('script');
+tag.src = "https://www.youtube.com/iframe_api";
+var firstScriptTag = document.getElementsByTagName('script')[0];
+firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
 let player;
 function onYouTubeIframeAPIReady() {
     player = new YT.Player('ytplayer', {
-        height: '80',
+        height: '100',
         width: '100%',
         videoId: 'rtOvBOTyX00', // A Thousand Years
         playerVars: {
