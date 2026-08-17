@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para você ❤️</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="heart-container" id="hearts"></div>
+
+    <!-- Fase 1: Pedido de Namoro -->
+    <div id="screen1" class="screen active" style="background-image: url('images/img1.jpg');">
+        <div class="overlay"></div>
+        <div class="content box">
+            <h1>Quer namorar comigo?</h1>
+            <div class="buttons">
+                <button id="btnYes1" class="btn btn-yes">Sim</button>
+                <button id="btnNo1" class="btn btn-no">Não</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Fase 2: Agradecimento e Pergunta Casamento -->
+    <div id="screen2" class="screen" style="background-image: url('images/img2.jpg');">
+        <div class="overlay"></div>
+        <div class="content box">
+            <h1 class="romantic-text">Muito obrigado! Você vai ser muito feliz em sua vida kkk ❤️</h1>
+            <h2 class="mt-4">Deseja escolher o local onde vamos nos casar?</h2>
+            <div class="buttons">
+                <button id="btnYes2" class="btn btn-yes">Sim</button>
+                <button id="btnNo2" class="btn btn-no">Não</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Fase 3: Escolha o Local -->
+    <div id="screen3" class="screen" style="background-image: url('images/img3.jpg');">
+        <div class="overlay"></div>
+        <div class="content box options-box">
+            <h1 class="romantic-text">Escolha onde vamos nos casar! 🏖️💍</h1>
+            <div class="options-grid">
+                <div class="option-card" data-bg="images/opt1.jpg" data-name="Búzios, Rio de Janeiro">
+                    <img src="images/opt1.jpg" alt="Búzios">
+                    <h3>Búzios, RJ</h3>
+                </div>
+                <div class="option-card" data-bg="images/opt2.jpg" data-name="Fernando de Noronha">
+                    <img src="images/opt2.jpg" alt="Fernando de Noronha">
+                    <h3>Fernando de Noronha, PE</h3>
+                </div>
+                <div class="option-card" data-bg="images/opt3.jpg" data-name="Santorini, Grécia">
+                    <img src="images/opt3.jpg" alt="Santorini">
+                    <h3>Santorini, Grécia</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Fase 4: Final -->
+    <div id="screen4" class="screen">
+        <div class="overlay"></div>
+        <div class="content box">
+            <h1 class="romantic-text">Perfeito! Nosso casamento será em <br><span id="selected-location"></span>! ❤️</h1>
+            <h2>Eu te amo!</h2>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
